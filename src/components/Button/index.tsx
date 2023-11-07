@@ -9,6 +9,7 @@ export const Button: React.FC<IButtonProps> = ({
   font = "#ffffff",
   className,
   size = "md",
+  br = "10px",
   children,
 }) => {
   return (
@@ -19,6 +20,7 @@ export const Button: React.FC<IButtonProps> = ({
       bg={bg}
       border={border}
       font={font}
+      br={br}
     >
       {children}
     </Styled.ButtonWrapper>

@@ -15,7 +15,7 @@ const Home: React.FC = () => {
 
   return (
     <AppLayout name="home">
-      <Section.Landing
+      {/* <Section.Landing
         description={
           data?.landing_description ??
           "Unlock a seamless learner journey. From admission to alumni networking, and beyond - our complete education solution has you covered."
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
       <Section.Resources
         data={data?.resources}
         title={data?.resource_title ?? "All the News and Resources You Need"}
-      />
+      /> */}
     </AppLayout>
   );
 };

@@ -51,8 +51,8 @@ export const AppLayout: React.FC<Props> = ({
       <Styled.AppContentWrapper>{children}</Styled.AppContentWrapper>
       <Faq />
       <Styled.FooterWrapper>
-        {!is_only_footer &&
-          (is_new_book ? <Section.NewBook /> : <Section.Book />)}
+        {/* {!is_only_footer &&
+          (is_new_book ? <Section.NewBook /> : <Section.Book />)} */}
         <Section.Navigation />
       </Styled.FooterWrapper>
     </Styled.AppLayoutWrapper>

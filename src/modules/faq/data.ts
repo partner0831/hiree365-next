@@ -1,23 +1,23 @@
 export const faqData = [
   {
     title: "Simple & Transparent Pricing",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
   {
     title: "Will using your SaaS platform turn me into a tech wizard?",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
   {
     title: "Is your platform compatible with unicorn browsers?",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
   {
     title: "How secure is your SaaS platform?",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
   {
     title: "Can your platform help me find my missing sock?",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
   {
     title: "Is there a secret handshake for platform users?",
@@ -25,14 +25,14 @@ export const faqData = [
   },
   {
     title: "Will your platform do my taxes?",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
   {
     title: "Can I use your platform to time travel?",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
   {
     title: "Will using your SaaS platform make me a superhero?",
-    desc: "asdf",
+    desc: "While our platform can't brew coffee, it can definitely wake up your business with a jolt of productivity!",
   },
 ];

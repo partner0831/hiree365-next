@@ -15,6 +15,7 @@ export type IButtonProps = {
   border?: string;
   font?: string;
   bg?: string;
+  br?: string;
   className?: string;
   size?: "sm" | "md" | "lg";
 } & React.HTMLAttributes<HTMLElement>;

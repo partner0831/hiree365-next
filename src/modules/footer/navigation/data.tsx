@@ -1,71 +1,7 @@
 import * as Icon from "react-icons/fa";
-
-export const features = [
-  {
-    label: "Pre-admissions and enrolment",
-    link: "#",
-  },
-  {
-    label: "Customer Relationship Management",
-    link: "#",
-  },
-  {
-    label: "Student Information System",
-    link: "#",
-  },
-  {
-    label: "Learning Management System",
-    link: "#",
-  },
-  {
-    label: "Fees & Invoicing",
-    link: "#",
-  },
-  {
-    label: "Finance & Accounting",
-    link: "#",
-  },
-  {
-    label: "E-Commerce Module",
-    link: "#",
-  },
-  {
-    label: "Fund Raising",
-    link: "#",
-  },
-  {
-    label: "Degree Audit",
-    link: "#",
-  },
-  {
-    label: "Alumni",
-    link: "#",
-  },
-  {
-    label: "White Label Module",
-    link: "#",
-  },
-];
-
 export const company = [
   {
-    label: "Partners",
-    link: "#",
-  },
-  {
-    label: "About us",
-    link: "#",
-  },
-  {
-    label: "Pricing",
-    link: "#",
-  },
-  {
-    label: "Careers",
-    link: "#",
-  },
-  {
-    label: "Terms & Conditions",
+    label: "About",
     link: "#",
   },
   {
@@ -73,31 +9,37 @@ export const company = [
     link: "#",
   },
   {
-    label: "Children’s Privacy Policy",
+    label: "Terms & Conditions",
     link: "#",
   },
   {
-    label: "Classe365 Direct Notice to Parents",
+    label: "Partners",
     link: "#",
   },
   {
-    label: "Classe365 Compliance with FERPA",
+    label: "Contact",
+    link: "#",
+  },
+];
+export const features = [
+  {
+    label: "Resources",
     link: "#",
   },
   {
-    label: "Classe365 Personal Data Processing Agreement (DPA)",
+    label: "Privacy Policy",
     link: "#",
   },
   {
-    label: "Cookie Policy",
+    label: "Terms & Conditions",
     link: "#",
   },
   {
-    label: "International Data Transfers",
+    label: "Partners",
     link: "#",
   },
   {
-    label: "Classe365 Web Accessibility Statement",
+    label: "Contact",
     link: "#",
   },
 ];
@@ -128,52 +70,63 @@ export const resources = [
     link: "#",
   },
 ];
-
-export const getintouch = [
+export const solutions = [
   {
-    label: "Contact Sales",
-    link: "#",
-  },
-  {
-    label: "Contact Support",
-    link: "#",
-  },
-  {
-    label: "Contact Partnership",
-    link: "#",
-  },
-  {
-    label: "Contact Media",
-    link: "#",
-  },
-];
-
-export const terms = [
-  {
-    label: "Terms & Conditions",
+    label: "Community",
     link: "#",
   },
   {
     label: "Privacy Policy",
     link: "#",
   },
+  {
+    label: "Terms & Conditions",
+    link: "#",
+  },
+  {
+    label: "Partners",
+    link: "#",
+  },
+  {
+    label: "Contact",
+    link: "#",
+  },
+];
+export const product = [
+  {
+    label: "Landing pages",
+    link: "#",
+  },
+  {
+    label: "Pricing",
+    link: "#",
+  },
+  {
+    label: "Benefits",
+    link: "#",
+  },
+  {
+    label: "Features",
+    link: "#",
+  },
 ];
 
 export const socials = [
   {
-    icon: <Icon.FaInstagram />,
+    icon: <Icon.FaGoogle color="var(--saas-p-5, #645E76)" />,
     link: "#",
   },
   {
-    icon: <Icon.FaFacebookF />,
+    icon: <Icon.FaTwitter color="var(--saas-p-5, #645E76)" />,
     link: "#",
   },
   {
-    icon: <Icon.FaLinkedinIn />,
+    icon: <Icon.FaInstagram color="var(--saas-p-5, #645E76)" />,
     link: "#",
   },
+
   {
-    icon: <Icon.FaTwitter />,
+    icon: <Icon.FaLinkedinIn color="var(--saas-p-5, #645E76)" />,
     link: "#",
   },
 ];

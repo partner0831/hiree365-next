@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FaqContainer = styled.div`
-    max-width: 1240px;
+    max-width: 1028px;
     width: 95%;
     margin: auto;
     h1{
@@ -22,11 +22,11 @@ export const FaqContainer = styled.div`
 `
 export const FAQContainer = styled.div`
   & > :not(:first-child) {
-    margin-top: 32px;
+    margin-top:0px;
   }
   @media screen and (max-width: 768px) {
     & > :not(:first-child) {
-      margin-top: 14px;
+      margin-top: 0px;
     }
   }
 `;
