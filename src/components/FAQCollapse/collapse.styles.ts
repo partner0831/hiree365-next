@@ -1,9 +1,13 @@
 import { styled } from "styled-components";
 
 export const CollapseWrapper = styled.div`
+  margin-top: 72px;
   border-radius: 12px;
-  border: 1px solid #6772e5;
+  border-bottom: 1px solid var(--border-border-primary, #E0E0E0);
   contain: content;
+  @media screen and (max-width: 768px){
+      margin-top: 30px;
+  }
 `;
 
 export const CollapseHeader = styled.div`
