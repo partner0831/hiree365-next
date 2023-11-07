@@ -4,6 +4,7 @@ import * as Styled from "./appLayout.styles";
 import { Header } from "./Header";
 import { seo_lists } from "./seo";
 import { Seo } from "@/components";
+import { Faq } from "@/modules/faq";
 
 type Props = {
   is_new_book?: boolean;
@@ -48,6 +49,7 @@ export const AppLayout: React.FC<Props> = ({
       <Seo {...props} />
       <Header />
       <Styled.AppContentWrapper>{children}</Styled.AppContentWrapper>
+      <Faq />
       <Styled.FooterWrapper>
         {!is_only_footer &&
           (is_new_book ? <Section.NewBook /> : <Section.Book />)}
