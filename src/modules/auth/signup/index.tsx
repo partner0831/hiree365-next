@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as Comp from "@/components";
 import * as Styled from "./signup.styles";
+import { SpringIcon } from "@/components/SVGs/others";
 
 export const SignUp: React.FC = () => {
   const [type, setType] = useState("Institute");
@@ -16,10 +17,11 @@ export const SignUp: React.FC = () => {
       <Styled.RContainer>
         <img src="./assets/images/logo-hire.png" />
         <div>
-          <h1>Welcome to Hiree365</h1>
-          <h2>Member Login</h2>
+          <h1>Register</h1>
+          <h2>Start for free Today</h2>
+          <h6>Access to all features. No credit card required.</h6>
           <Styled.TypeView>
-            {["Institute", "Employer", "Candidate"].map((item, key) => (
+            {["Institute", "Employer"].map((item, key) => (
               <Styled.TypeButton
                 flag={item === type ? "true" : "false"}
                 key={key}
@@ -46,15 +48,16 @@ export const SignUp: React.FC = () => {
           />
           <h3>Forgot Password?</h3>
           <Comp.Button bg="#0B132B" border="#0B132B">
-            Sign In
+            Submit & Register
           </Comp.Button>
           <span>
-            Don’t have an account? <span>Register</span>
+            Already have an account? <span>Sign In</span>
           </span>
         </div>
         <p>@2023 Hiree365 All Right Reserved.</p>
       </Styled.RContainer>
       <Styled.LContainer>
+        <SpringIcon />
         <div>
           <h4>Bridging the gap between talent and opportunity</h4>
           <h5>

@@ -30,7 +30,7 @@ export const RContainer = styled.div`
    align-items: center;
    justify-content: center;
    & > div{
-    max-width: 400px;
+    max-width: 815px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -128,6 +128,12 @@ export const TypeButton  = styled.button<{flag:string}>`
     cursor: pointer;
 `
 export const LContainer = styled.div`
+    position: relative;
+    svg{
+      position: absolute;
+      top: 82px;
+      left:65px;
+    }
     div{
       max-width: 720px;
       display: flex;
@@ -148,6 +154,11 @@ export const LContainer = styled.div`
           min-height: fit-content;
           div{
             padding: 57.29px 16.67px 110px 16.67px;
+          }
+          svg{
+            position: absolute;
+            top: 40px;
+            left:35px;
           }
       }
       img{

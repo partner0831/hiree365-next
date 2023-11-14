@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as Comp from "@/components";
 import * as Styled from "./signin.styles";
+import { SpringIcon } from "@/components/SVGs/others";
 
 export const SignIn: React.FC = () => {
   const [type, setType] = useState("Institute");
@@ -55,6 +56,7 @@ export const SignIn: React.FC = () => {
         <p>@2023 Hiree365 All Right Reserved.</p>
       </Styled.RContainer>
       <Styled.LContainer>
+        <SpringIcon />
         <div>
           <h4>Bridging the gap between talent and opportunity</h4>
           <h5>
