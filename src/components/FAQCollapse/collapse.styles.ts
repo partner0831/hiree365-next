@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 
 export const CollapseWrapper = styled.div`
   margin-top: 72px;
-  border-radius: 12px;
   border-bottom: 1px solid var(--border-border-primary, #E0E0E0);
   contain: content;
   @media screen and (max-width: 768px){
@@ -11,15 +10,16 @@ export const CollapseWrapper = styled.div`
 `;
 
 export const CollapseHeader = styled.div`
-  padding: 32px;
+  padding: 24px 0;
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
   h3 {
-    color: #1e2123;
+    color: var(--text-text-primary, #272B30);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 32px; /* 160% */
   }
   @media screen and (max-width: 768px) {
     padding: 24px 14px;
@@ -30,7 +30,7 @@ export const CollapseHeader = styled.div`
 `;
 
 export const CollapseContent = styled.div<{ open: boolean }>`
-  padding: ${({ open }) => (open ? "0 80px 32px 32px" : "0 80px 0 32px")};
+  padding: ${({ open }) => (open ? "0 80px 24px 0" : "0 24px 0 0")};
   height: ${({ open }) => (open ? "fit-content" : "0px")};
   opacity: ${({ open }) => (open ? 1 : 0)};
   color: #3b3f42;

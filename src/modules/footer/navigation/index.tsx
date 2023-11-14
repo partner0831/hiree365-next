@@ -1,31 +1,30 @@
 import React from "react";
 import * as Data from "./data";
 import * as Styled from "./navigation.styles";
+import * as Comp from "@/components";
 
 export const Navigation: React.FC = () => {
-  const { company, features, getintouch, resources, socials, terms } = Data;
+  const { company, features, product, solutions, socials } = Data;
 
   return (
     <Styled.NavigationWrapper>
       <Styled.NavigationContainer>
-        <Styled.FooterLogo
-          src="/assets/images/logo-white.png"
-          alt="App Logo White"
-        />
         <Styled.NavigationGrid>
           <Styled.NavigationListWrapper>
             <Styled.NavigationListContent>
-              <h2>FEATURES</h2>
-              {features.map((row, index) => (
-                <a href={row.link} key={index}>
-                  {row.label}
-                </a>
-              ))}
+              <Styled.FooterLogo
+                src="/assets/images/logo-white.png"
+                alt="App Logo White"
+              />
+              <a>
+                With Hire365 Universities, Students, Employers and Government
+                are all united in a single objective
+              </a>
             </Styled.NavigationListContent>
           </Styled.NavigationListWrapper>
           <Styled.NavigationListWrapper>
             <Styled.NavigationListContent>
-              <h2>COMPANY</h2>
+              <h2>Company</h2>
               {company.map((row, index) => (
                 <a href={row.link} key={index}>
                   {row.label}
@@ -35,8 +34,32 @@ export const Navigation: React.FC = () => {
           </Styled.NavigationListWrapper>
           <Styled.NavigationListWrapper>
             <Styled.NavigationListContent>
-              <h2>RESOURCES</h2>
-              {resources.map((row, index) => (
+              <h2>Feature</h2>
+              {features.map((row, index) => (
+                <a href={row.link} key={index}>
+                  {row.label}
+                </a>
+              ))}
+            </Styled.NavigationListContent>
+          </Styled.NavigationListWrapper>
+
+          <Styled.NavigationListWrapper>
+            <Styled.NavigationListContent>
+              <h2>Solutions</h2>
+              {solutions.map((row, index) => (
+                <a href={row.link} key={index}>
+                  {row.label}
+                </a>
+              ))}
+            </Styled.NavigationListContent>
+          </Styled.NavigationListWrapper>
+        </Styled.NavigationGrid>
+        <Styled.NavigationGrid>
+          <Styled.NavigationListWrapper></Styled.NavigationListWrapper>
+          <Styled.NavigationListWrapper>
+            <Styled.NavigationListContent>
+              <h2>Company</h2>
+              {company.map((row, index) => (
                 <a href={row.link} key={index}>
                   {row.label}
                 </a>
@@ -45,48 +68,39 @@ export const Navigation: React.FC = () => {
           </Styled.NavigationListWrapper>
           <Styled.NavigationListWrapper>
             <Styled.NavigationListContent>
-              <h2>GET IN TOUCH</h2>
-              {getintouch.map((row, index) => (
+              <h2>Feature</h2>
+              {features.map((row, index) => (
                 <a href={row.link} key={index}>
                   {row.label}
                 </a>
               ))}
             </Styled.NavigationListContent>
+          </Styled.NavigationListWrapper>
+
+          <Styled.NavigationListWrapper>
             <Styled.NavigationListContent>
-              <h2>Classe365</h2>
-              <a href="#">22-28 Edgeworth David Avenue, Hornsby, NSW 2077</a>
-            </Styled.NavigationListContent>
-            <Styled.NavigationListContent>
-              <h2>Download App</h2>
-              <Styled.DownloadButtonWrapper>
-                <a href="#">
-                  <img
-                    src="/assets/images/footer/app_store.png"
-                    alt="App store"
-                    width={111.881}
-                  />
+              <h2>Solutions</h2>
+              {solutions.map((row, index) => (
+                <a href={row.link} key={index}>
+                  {row.label}
                 </a>
-                <a href="#">
-                  <img
-                    src="/assets/images/footer/googleplay.png"
-                    alt="Google Play"
-                    width={111.881}
-                  />
-                </a>
-              </Styled.DownloadButtonWrapper>
+              ))}
             </Styled.NavigationListContent>
           </Styled.NavigationListWrapper>
         </Styled.NavigationGrid>
+        <Styled.SearchWrapper>
+          <h5>Don’t find the answer? contact us for any query. </h5>
+          <Styled.SearchView>
+            <input placeholder="Your business email" />
+            <Comp.Button br="100px">Get Started</Comp.Button>
+          </Styled.SearchView>
+          <Styled.SearchBtnView>
+            <Comp.Button br="100px">Get Started</Comp.Button>
+          </Styled.SearchBtnView>
+        </Styled.SearchWrapper>
         <Styled.CopyrightWrapper>
-          <p>Copyright © Classe365 | All Rights Reserved.</p>
+          <p>© 2023 Hiree365 All rights reserved</p>
           <Styled.SocialsNavWrapper>
-            <div>
-              {terms.map((row, index) => (
-                <a href={row.link} key={index}>
-                  {row.label}
-                </a>
-              ))}
-            </div>
             <div>
               {socials.map((social, index) => (
                 <a href={social.link} key={index} className="social-link">

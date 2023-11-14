@@ -6,7 +6,7 @@ export const ButtonWrapper = styled.div<IButtonProps>`
   cursor: pointer;
   color: ${({ font }) => font};
   border: ${({ border }) => "1px solid " + border};
-  border-radius: 10px;
+  border-radius: ${({ br }) => br};
   white-space: nowrap;
   justify-content: center;
   display: flex;
