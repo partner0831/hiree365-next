@@ -5,19 +5,26 @@ export const InputWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   span {
-    color: #555;
-    font-size: 16px;
+    color: var(--secondary-500, #191919);
+    font-size: 14px;
     font-weight: 400;
-    line-height: 30px; /* 187.5% */
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
   }
   input {
+    margin-top: 10px;
     border-radius: 6px;
-    border: 1px solid #f0f0f0;
+    border: 0.5px solid var(--secondary-200, #E7E7E7);
     background: #fff;
     outline: none;
     width: 100%;
     height: 46px;
     padding: 0 16px;
-    font-size: 16px;
+    font-size: 14px;
+
+  }
+  :focus{
+    border: 0.5px solid var(--primary-500, #4D67EB);
+
   }
 `;
