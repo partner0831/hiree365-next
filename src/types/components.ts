@@ -79,6 +79,7 @@ export type IInputProps = {
   label?: string;
   name?: string;
   placeholder?: string;
+  style?:any;
 };
 
 export type ISelectProps = {
