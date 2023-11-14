@@ -1,8 +1,8 @@
 import React from "react";
 import * as Section from "@/modules/auth";
 
-const SignIN: React.FC = () => {
+const SignIn: React.FC = () => {
   return <Section.SignIn />;
 };
 
-export default SignIN;
+export default SignIn;

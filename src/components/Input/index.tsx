@@ -8,9 +8,10 @@ export const Input: React.FC<IInputProps> = ({
   label,
   name,
   placeholder,
+  style,
 }) => {
   return (
-    <Styled.InputWrapper>
+    <Styled.InputWrapper style={style}>
       <span>{label}</span>
       <input
         type="text"

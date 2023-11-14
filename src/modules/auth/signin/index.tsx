@@ -3,6 +3,7 @@ import * as Comp from "@/components";
 import * as Styled from "./signin.styles";
 
 export const SignIn: React.FC = () => {
+  const [type, setType] = useState("Institute");
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -17,6 +18,17 @@ export const SignIn: React.FC = () => {
         <div>
           <h1>Welcome to Hiree365</h1>
           <h2>Member Login</h2>
+          <Styled.TypeView>
+            {["Institute", "Employer", "Candidate"].map((item, key) => (
+              <Styled.TypeButton
+                flag={item === type ? "true" : "false"}
+                key={key}
+                onClick={() => setType(item)}
+              >
+                {item}
+              </Styled.TypeButton>
+            ))}
+          </Styled.TypeView>
           <Comp.Input
             onChange={handleInputChange}
             value={form.email}
@@ -25,6 +37,7 @@ export const SignIn: React.FC = () => {
             placeholder="input your email"
           />
           <Comp.Input
+            style={{ marginTop: "20px" }}
             onChange={handleInputChange}
             value={form.password}
             label="Password"
@@ -41,7 +54,17 @@ export const SignIn: React.FC = () => {
         </div>
         <p>@2023 Hiree365 All Right Reserved.</p>
       </Styled.RContainer>
-      <Styled.LContainer></Styled.LContainer>
+      <Styled.LContainer>
+        <div>
+          <h4>Bridging the gap between talent and opportunity</h4>
+          <h5>
+            We connect institutes and employers on one platform, to help
+            institutions find the best talent, and employers find the right
+            candidates, all in one place.
+          </h5>
+          <img src={"./assets/images/auth/auth.png"} />
+        </div>
+      </Styled.LContainer>
     </Styled.SignInWrapper>
   );
 };
