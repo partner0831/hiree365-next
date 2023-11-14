@@ -41,10 +41,10 @@ export const RContainer = styled.div`
    }
    h1{
         color: var(--secondary-500, #191919);
-        font-size: 24px;
-        font-style: normal;
-        line-height: 150%; /* 36px */
-        letter-spacing: -0.24px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        letter-spacing: -0.18px;
    }
    h2{
         color: #7D75EA;
@@ -89,6 +89,14 @@ export const RContainer = styled.div`
       letter-spacing: -0.28px;
     }
    }
+   h6{
+    color: var(--secondary-500, #191919);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+    margin-bottom: 21px;
+   }
    @media screen and (max-width: 768px) {
       height: fit-content;
       min-height: fit-content;
@@ -114,6 +122,40 @@ export const TypeView = styled.div`
     margin-bottom: 14px;
     & > :not(:first-child) {
         margin-left: 12px;
+    }
+`
+export const SignUpInputGroup = styled.div`
+  display: grid;
+  grid-gap: 10px 14px;
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-gap: 14px;
+  }
+`;
+export const AgreeView = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 32px 0 47px 0;
+    input{
+        width: 24px;
+        height: 24px;
+        border: 1px solid #BABABA;
+        margin-right: 10px;
+    }
+    & >span{
+        color: var(--secondary-400, #757575);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+        letter-spacing: -0.28px;
+        span{
+            color: #4D67EB;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: -0.28px;
+        }
     }
 `
 export const TypeButton  = styled.button<{flag:string}>`
