@@ -31,22 +31,74 @@ export const SignUp: React.FC = () => {
               </Styled.TypeButton>
             ))}
           </Styled.TypeView>
-          <Comp.Input
-            onChange={handleInputChange}
-            value={form.email}
-            label="Email"
-            name="email"
-            placeholder="input your email"
-          />
-          <Comp.Input
-            style={{ marginTop: "20px" }}
-            onChange={handleInputChange}
-            value={form.password}
-            label="Password"
-            name="password"
-            placeholder="input your password"
-          />
-          <h3>Forgot Password?</h3>
+          <Styled.SignUpInputGroup>
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.email}
+              label="Institute Name *"
+              name="email"
+              placeholder="input your email"
+            />
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.password}
+              label="Website *"
+              name="password"
+              placeholder="input your password"
+            />
+
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.email}
+              label="First Name *"
+              name="email"
+              placeholder="input your email"
+            />
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.password}
+              label="Last Name *"
+              name="password"
+              placeholder="input your password"
+            />
+
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.email}
+              label="Email *"
+              name="email"
+              placeholder="input your email"
+            />
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.password}
+              label="Contact number *"
+              name="password"
+              placeholder="input your password"
+            />
+
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.email}
+              label="Password *"
+              name="email"
+              placeholder="input your email"
+            />
+            <Comp.Input
+              onChange={handleInputChange}
+              value={form.password}
+              label="Confirm Password *"
+              name="password"
+              placeholder="input your password"
+            />
+          </Styled.SignUpInputGroup>
+          <Styled.AgreeView>
+            <input type="checkbox" />
+            <span>
+              I agree to the <span>terms and conditions</span> for using this
+              platform.
+            </span>
+          </Styled.AgreeView>
           <Comp.Button bg="#0B132B" border="#0B132B">
             Submit & Register
           </Comp.Button>
@@ -54,7 +106,6 @@ export const SignUp: React.FC = () => {
             Already have an account? <span>Sign In</span>
           </span>
         </div>
-        <p>@2023 Hiree365 All Right Reserved.</p>
       </Styled.RContainer>
       <Styled.LContainer>
         <SpringIcon />
