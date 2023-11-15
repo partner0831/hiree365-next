@@ -1,4 +1,19 @@
 import type { SVGAttributes } from "@/types";
+export const MainIcon: React.FC<SVGAttributes> = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="595"
+    height="29"
+    viewBox="0 0 595 29"
+    fill="none"
+  >
+    <path
+      d="M73 2.92969H539.5L1 26.9242H595"
+      stroke="#FFA62B"
+      stroke-width="4"
+    />
+  </svg>
+);
 
 export const DiscoverIcon: React.FC<SVGAttributes> = () => (
   <svg
