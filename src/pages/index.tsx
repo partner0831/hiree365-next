@@ -16,6 +16,7 @@ const Home: React.FC = () => {
   return (
     <AppLayout name="home">
       <Section.Landing />
+      <Section.Recruitment />
       {/* <Section.Landing
         description={
           data?.landing_description ??
