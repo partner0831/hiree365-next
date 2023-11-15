@@ -203,8 +203,10 @@ export const LContainer = styled.div`
             left:35px;
           }
       }
-      img{
-        max-width: 100%;
+      @media screen and (max-width: 1700px){
+          img{
+          max-width: 100%;
+        }
       }
       h4{
         color: var(--secondary-500, #191919);
